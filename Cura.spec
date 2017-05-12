@@ -4,7 +4,7 @@
 Summary:	A 3D printer slicing GUI built on top of the Uranium framework 
 Name:		%{oname}
 Version:	2.3.1
-Release:	0
+Release:	1
 Group:		Development/Other
 License:	AGPLv3+
 URL:		https://github.com/Ultimaker/%{name}
