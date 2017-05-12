@@ -43,7 +43,7 @@ based 3D printers.
 
 It is part of the larger open source project called "Cura".
 
-%files -n %{name}.lang
+%files -f %{name}.lang
 %{_bindir}/%{lname}
 %{py_puresitedir}/cura
 %{_datadir}/%{lname}
