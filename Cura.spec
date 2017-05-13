@@ -65,7 +65,7 @@ It is part of the larger open source project called "Cura".
 
 # Use system fonts
 rm -rf %{buildroot}%{_datadir}/%{name}/resources/themes/%{lname}/fonts/
-ln -s %{_datadir}/fonts/open-sans/ %{buildroot}%{_datadir}/%{name}/resources/themes/%{lname}/fonts
+ln -s %{_datadir}/fonts/open-sans %{buildroot}%{_datadir}/%{name}/resources/themes/%{lname}/fonts
 
 %build
 %cmake
@@ -87,7 +87,7 @@ desktop-file-edit \
 
 # Use system fonts
 #rm -rf %{buildroot}%{_datadir}/%{name}/resources/themes/cura/fonts/
-#ln -s %{_datadir}/fonts/open-sans/ %{buildroot}%{_datadir}/%{name}/resources/themes/cura/fonts
+#ln -s %{_datadir}/fonts/open-sans %{buildroot}%{_datadir}/%{name}/resources/themes/cura/fonts
 
 %find_lang %{name} --all-name
 
