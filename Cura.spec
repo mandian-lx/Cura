@@ -89,6 +89,14 @@ desktop-file-edit \
 #rm -rf %{buildroot}%{_datadir}/%{name}/resources/themes/cura/fonts/
 #ln -s %{_datadir}/fonts/TTF/open-sans %{buildroot}%{_datadir}/%{name}/resources/themes/cura/fonts
 
+# Only .mo files are used
+find %{buildroot}%{_datadir} \( -name \*po -o -name \*pot \) -delete
+
+# Fix locales files path
+mv %{buildroot}%{_datadir}/uranium/resources/i18n %{buildroot}%{_datadir}/locale
+ln -s ../../locale %{buildroot}%{_datadir}/%{lname}/resources/i18n
+
+# locales
 %find_lang %{name} --all-name
 
 %check
