@@ -64,8 +64,8 @@ It is part of the larger open source project called "Cura".
 %patch1 -p1 #-b .plugins
 
 # Use system fonts
-rm -rf %{buildroot}%{_datadir}/%{name}/resources/themes/%{lname}/fonts/
-ln -s %{_datadir}/fonts/TTF/open-sans %{buildroot}%{_datadir}/%{name}/resources/themes/%{lname}/fonts
+rm -rf resources/themes/%{lname}/fonts/
+ln -s %{_datadir}/fonts/TTF/open-sans resources/themes/%{lname}/fonts
 
 %build
 %cmake
