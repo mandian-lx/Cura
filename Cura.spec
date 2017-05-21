@@ -34,7 +34,6 @@ Requires:	python-qt5-quick
 Requires:	python-qt5-quickwidgets
 Requires:	python-qt5-widgets
 Requires:	python3egg(pyserial)
-Requires:	font-ttf-open-sans
 
 %description
 CuraEngine is a powerful, fast and robust engine for processing 3D
